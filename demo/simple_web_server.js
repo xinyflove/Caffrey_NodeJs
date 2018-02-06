@@ -1,3 +1,4 @@
+// 使用 Node 创建 Web 服务器
 var http = require('http');
 var fs = require('fs');
 var url = require('url');
@@ -21,7 +22,7 @@ http.createServer( function (req, res) {
 			// HTTP 状态码: 200 : OK
 			// Content Type: text/plain
 			res.writeHead(200, {'Content-Type': 'text/html'});    
-			
+
 			// 响应文件内容
 			res.write(data.toString()); 
 		}
