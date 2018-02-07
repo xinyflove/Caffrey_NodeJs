@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>测试FORM 提交</title>
+</head>
+<body>
+	<fieldset>
+		<legend>
+			GET 提交
+		</legend>
+		<form action="http://127.0.0.1:3000/process_get" method="GET">
+			First Name: <input type="text" name="first_name">
+			<br>
+		
+			Last Name: <input type="text" name="last_name">
+			<br>
+
+			<input type="submit" value="Submit">
+		</form>
+	</fieldset>
+	
+	<fieldset>
+		<legend>
+			POST 提交
+		</legend>
+		<form action="http://127.0.0.1:3000/process_post" method="POST">
+			First Name: <input type="text" name="first_name">
+			<br>
+		
+			Last Name: <input type="text" name="last_name">
+			<br>
+
+			<input type="submit" value="Submit">
+		</form>
+	</fieldset>
+
+	<fieldset>
+		<legend>
+			文件上传
+		</legend>
+		<form action="http://127.0.0.1:3000/file_upload" method="POST" enctype="multipart/form-data">
+			<input type="file" name="image" size="50" />
+			<br />
+			<input type="submit" value="上传文件" />
+		</form>
+	</fieldset>
+</body>
+</html>
